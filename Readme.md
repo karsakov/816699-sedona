@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Карсаков](https://up.htmlacademy.ru/htmlcss/22/user/816699).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
