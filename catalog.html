@@ -23,11 +23,49 @@
     <main>
       <section class="forms">
         <h1 class="visually-hidden">Выбор гостиницы</h1>
-        <h2 class="form-title">Инфраструктура</h2>
-        <h2 class="form-title">Тип жилья</h2>
-        <h2 class="form-title">Стоимость в сутки (р)</h2>
-        <!-- Здесь будет форма -->
-        <button type="submit" class="show">Показать</button>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend><h2 class="form-title">Инфраструктура</h2></legend>
+            <label>
+              <input class="checkbox-filter" type="checkbox" name="pool" checked>
+              Бассейн
+            </label>
+            <label>
+              <input class="checkbox-filter" type="checkbox" name="parking">
+              Парковка
+            </label>
+            <label>
+              <input class="checkbox-filter" type="checkbox" name="wi-fi">
+              WI-FI
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend><h2 class="form-title">Тип жилья</h2></legend>
+            <label>
+              <input class="checkbox-filter" type="checkbox" name="inn" checked>
+              Гостиница
+            </label>
+            <label>
+              <input class="checkbox-filter" type="checkbox" name="hotel" checked>
+              Отель
+            </label>
+            <label>
+              <input class="checkbox-filter" type="checkbox" name="apartment" checked>
+              Апартаменты
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend><h2 class="form-title">Стоимость в сутки (р)</h2></legend>
+            <table class="price-table">
+              <tr>
+                <td>от 0</td>
+                <td>до 3000</td>
+              </tr>
+            </table>
+            <input class="price-filter" type="range" name="range-of-price" value="2400" min="0" max="3000" step="100">
+            <button class="button show-button" type="submit" class="show-hotels">Показать</button>
+          </fieldset>
+        </form>
       </section>
 
       <section class="filter">
