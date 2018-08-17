@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона|Каталог</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
@@ -23,46 +24,65 @@
     <main>
       <section class="forms">
         <h1 class="visually-hidden">Выбор гостиницы</h1>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post" oninput="maxprice.value=rangeofprice.value">
           <fieldset>
             <legend><h2 class="form-title">Инфраструктура</h2></legend>
+            <ul>
+              <li class="filter-option">
             <label>
-              <input class="checkbox-filter" type="checkbox" name="pool" checked>
+              <input class="visually-hidden checkbox-filter" type="checkbox" name="pool" checked>
               Бассейн
             </label>
+            </li>
+            <li class="filter-option">
             <label>
-              <input class="checkbox-filter" type="checkbox" name="parking">
+              <input class="visually-hidden checkbox-filter" type="checkbox" name="parking">
               Парковка
             </label>
+            </li>
+            <li class="filter-option">
             <label>
-              <input class="checkbox-filter" type="checkbox" name="wi-fi">
+              <input class="visually-hidden checkbox-filter" type="checkbox" name="wi-fi">
               WI-FI
             </label>
+            </li>
+            </ul>
           </fieldset>
+
           <fieldset>
             <legend><h2 class="form-title">Тип жилья</h2></legend>
+            <ul>
+              <li>
             <label>
-              <input class="checkbox-filter" type="checkbox" name="inn" checked>
+              <input class="visually-hidden checkbox-filter" type="checkbox" name="inn" checked>
               Гостиница
             </label>
+          </li>
+          <li>
             <label>
-              <input class="checkbox-filter" type="checkbox" name="hotel" checked>
+              <input class="visually-hidden checkbox-filter" type="checkbox" name="hotel" checked>
               Отель
             </label>
+          </li>
+          <li>
             <label>
-              <input class="checkbox-filter" type="checkbox" name="apartment" checked>
+              <input class="visually-hidden checkbox-filter" type="checkbox" name="apartment" checked>
               Апартаменты
             </label>
+          </li>
+            </ul>
           </fieldset>
+
+
           <fieldset>
             <legend><h2 class="form-title">Стоимость в сутки (р)</h2></legend>
             <table class="price-table">
               <tr>
-                <td>от 0</td>
-                <td>до 3000</td>
+                <td class="minprice">от 0</td>
+                <td class="maxprice">до <output width="100" name="maxprice" value="3000">3000</output></td>
               </tr>
             </table>
-            <input class="price-filter" type="range" name="range-of-price" value="2400" min="0" max="3000" step="100">
+            <input class="price-filter" type="range" name="range-of-price" id="rangeofprice" value="3000" min="0" max="5000" step="100">
             <button class="button show-button" type="submit" class="show-hotels">Показать</button>
           </fieldset>
         </form>
