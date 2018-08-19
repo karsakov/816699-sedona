@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Основная навигация">
         <a class="logo" href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
@@ -66,7 +66,7 @@
               <label class="text-min-price">от <input type="text" name="min-price" value="0"></label>
               <label class="text-max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-            <div class="range-price-bar"></div>
+            <div class="range-price-bar"><span class="visually-hidden">диапазон цен</span></div>
             <div class="range-point range-min-price"><span class="visually-hidden">от</span></div>
             <div class="range-point range-max-price"><span class="visually-hidden">до</span></div>
             <button class="show-hotels" type="submit">Показать</button>
