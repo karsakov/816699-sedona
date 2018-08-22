@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans-Bold', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -13,7 +13,6 @@ body {
 }
 
 .content {
-  position: top center;
   max-width: 1200px;
   min-width: 768px;
   text-align: center;
@@ -399,11 +398,14 @@ a {
   background-color: #ebebeb;
 }
 
-.input-date:active,
-.adult-number:active,
-.children-number:active {
+.input-date:focus,
+.adult-number:focus,
+.children-number:focus {
+  outline: 2px solid #e5e5e5;
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
+
 
 .calendar-button {
   border: none;

@@ -5,22 +5,21 @@
     <title>HTML Academy: Седона|Каталог</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css" >
-  </head>
-  <body>
   </head>
   <body>
 
-    <section class="content">
-    <section class="header-filter">
+    <div class="content">
+    <div class="header-filter">
     <header class="main-header">
       <nav class="main-navigation" aria-label="Основная навигация">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <a class="logo" href="index.html">
+               <li>
+            <a class="logo" href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
+      </li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -82,7 +81,7 @@
         </div>
         </form>
       </section>
-    </section>
+    </div>
 
       <section class="filter">
         <h2 class="visually-hidden">Сортировка</h2>
@@ -92,16 +91,8 @@
         <a class="active" href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По рейтингу</a>
-        <a href="#">
-          <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-            <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="arrow-down active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-            <path fill="#231F20" d="M5.5 10L0 0h11"/>
-          </svg>
-        </a>
+        <a class="arrow-up" href="#">Up</a>
+        <a class="arrow-down active" href="#">Down</a>
         </div>
       </section>
 
@@ -171,6 +162,6 @@
             </a>
         </p>
       </footer>
-  </section>
+        </div>
   </body>
 </html>
