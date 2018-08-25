@@ -17,6 +17,7 @@ body {
 }
 
 .content {
+  position: relative;
   max-width: 1200px;
   min-width: 768px;
   text-align: center;
@@ -33,7 +34,19 @@ a {
 .main-navigation li {
   padding-top: 9px;
   padding-bottom: 9px;
-  display: list-item;
+  width:20%;
+}
+
+.menu-item-left {
+  text-align: left;
+}
+
+.menu-item-right {
+  text-align: right;
+}
+
+.menu-second-item {
+  margin-right: 12%;
 }
 
 .site-navigation {
@@ -42,7 +55,7 @@ a {
   align-items: center;
   list-style: none;
   color: #000000;
-  padding: 5px 73px;
+  padding: 5px 6%;
   margin: 0;
 
   background-color: #ffffff;
@@ -51,8 +64,9 @@ a {
 
 .logo {
   position: absolute;
-  margin-left:-70px;
+  margin-left:-140px;
   top: 0px;
+  transform: translateX(50%);
 }
 
 .site-navigation a {
@@ -70,19 +84,11 @@ a {
 .active {
   color: #766357;
 }
-.site-navigation li:nth-child(2) {
-  transform: translateX(-90%);
-}
-
-.site-navigation li:nth-child(3) {
-transform: translateX(80%);
-}
-
 
 .start-screen {
   min-width: 768px;
   width: 100%;
-  height: 564px;
+  min-height: 564px;
   background-image:
   url("../img/intro-mask.svg"),
   url("../img/intro-welcome.svg"),
@@ -96,7 +102,7 @@ transform: translateX(80%);
   background-size:
   100%,
   459px 353px,
-  100%;
+  cover;
 }
 
 .features .feature:first-child {
@@ -113,9 +119,7 @@ transform: translateX(80%);
   line-height: 26px;
 
   max-width: 440px;
-  margin: auto;
-  padding-top: 61px;
-  padding-bottom: 38px;
+  margin: 60px auto 28px;
 }
 
 .features-title p {
@@ -125,8 +129,7 @@ transform: translateX(80%);
   color: #333333;
 
   max-width: 489px;
-  margin: auto;
-  padding-bottom: 56px;
+  margin: 10px auto 49px;
 }
 
 .features {
@@ -141,26 +144,25 @@ transform: translateX(80%);
 
 }
 
-.city {
- flex-grow: 3;
-  background-image: url("../img/city.jpg");
-  background-size: cover;
-  background-position: center;
+.city-illustration {
+  background: url("../img/city.jpg") 100% 0 no-repeat;
+  background-position: right
+  background-color: #81b3d2;
 }
 
-.devil-bridge {
-  flex-grow: 3;
-  background-image: url("../img/devil-bridge.jpg");
-  background-size: cover;
-  background-position: center;
+.bridge-illustration {
+  background: url("../img/devil-bridge.jpg") 100% 0 no-repeat;
+  background-position: top left;
+  background-color: #81b3d2;
 }
 
 
 
 .tips {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 164px;
-  padding-bottom: 87px;
+  margin-bottom: 87px;
   justify-content: space-around;
 }
 
@@ -173,6 +175,7 @@ transform: translateX(80%);
 
 
 .header-filter {
+  width: 100%;
   background-image: url("../img/filter-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -180,13 +183,38 @@ transform: translateX(80%);
 }
 
 .filter-form {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-align: left;
   color: #ffffff;
+}
+
+.first-second-columns {
+  display: flex;
+  text-align: left;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.filter-third-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: left;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+.first-column {
+  margin-left: 9%;
+}
+
+.second-column {
+  margin-left: 14%;
 }
 
 .filter-form legend {
@@ -254,6 +282,7 @@ transform: translateX(80%);
 }
 
 .filter {
+  display: flex;
   text-align: left;
   padding: 32px 71px 33px 71px;
 }
@@ -265,11 +294,27 @@ transform: translateX(80%);
   align-items: flex-start;
 }
 
+.sorted-items-all {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .sorted-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
   color: black;
   font-size: 10.5px;
   line-height: 17.5px;
   font-weight: 400;
+}
+
+.sorted-item-arrows {
+  display: flex;
+  flex-grow: 3;
+  justify-content: flex-end;
 }
 
 .sorted-items a {
@@ -293,14 +338,6 @@ transform: translateX(80%);
   text-decoration: none;
 }
 
-.arrow-down {
-  fill:#cacaca;
-}
-
-.arrow-up {
-  fill: red;
-}
-
 .hotel-title {
   color: #000000;
 }
@@ -312,6 +349,40 @@ transform: translateX(80%);
 .hotel-title:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.catalog-first-section {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.catalog-second-section {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.catalog-item {
+  display: flex;
+  width: 100%;
+}
+
+.hotel-image {
+  align-self: center;
+}
+
+.hotel-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hotel-rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .catalog-item h2 {
   font-size: 21px;
@@ -413,6 +484,7 @@ transform: translateX(80%);
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   background-color: #eeeeee;
@@ -433,6 +505,12 @@ transform: translateX(80%);
 
 .feature-with-illustration p {
   color: white;
+}
+
+.feature-item {
+  max-width: 261px;
+  margin-top: 50px;
+  margin-bottom: 64px;
 }
 
 
@@ -461,6 +539,8 @@ transform: translateX(80%);
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
 
   width: 568px;
   height: 86px;
@@ -478,12 +558,12 @@ transform: translateX(80%);
 
 .booking-map {
 background-image: url("../img/map.png");
+padding-bottom: 198px;
 }
 
 .search-form {
   display: flex;
   padding: 55px;
-  margin-bottom: 78px;
   background-color: white;
   text-align: center;
   background-position: top center;
@@ -513,8 +593,9 @@ background-image: url("../img/map.png");
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
 }
+
 
 .input-date:hover,
 .adult-number:hover,
@@ -575,6 +656,8 @@ background-image: url("../img/map.png");
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 
   width: 458px;
   height: 58px;
@@ -595,6 +678,11 @@ background-image: url("../img/map.png");
   align-items: center;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.9);
+  min-height: 120px;
+}
+
+.footer-index {
+ margin-top: -120px;
 }
 
 .tag {
@@ -605,6 +693,7 @@ background-image: url("../img/map.png");
 .footer-social {
   display: flex;
   list-style: none;
+  padding-left: 0;
 }
 
 .footer-social li {
