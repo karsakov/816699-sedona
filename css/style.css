@@ -1,4 +1,6 @@
-
+* {
+  outline: 2px solid red;
+}
 
 body {
   margin: 0;
@@ -372,10 +374,11 @@ a {
 }
 
 .catalog-item {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   width: 100%;
-   padding: 32px 71px 33px 71px;
+  padding: 32px 71px 33px 71px;
 
 }
 
