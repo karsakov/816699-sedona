@@ -1,3 +1,7 @@
+* {
+  outline: 2px solid red;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -279,6 +283,9 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
+
+
+  margin-right: 2%;
 }
 
 .filter {
@@ -292,12 +299,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0px;
+  padding: 0px;
 }
 
 .sorted-items-all {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+
 }
 
 .sorted-items {
@@ -340,6 +349,8 @@ a {
 
 .hotel-title {
   color: #000000;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hotel-title:hover {
@@ -352,35 +363,57 @@ a {
 
 .catalog-first-section {
   display: flex;
-  justify-content: space-around;
-  flex-grow: 1;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .catalog-second-section {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
+  margin-bottom: 10px;
+  padding: 0px;
 }
 
 .catalog-item {
   display: flex;
+  justify-content: space-between;
   width: 100%;
+   padding: 32px 71px 33px 71px;
+
 }
 
 .hotel-image {
+  width: 135px;
+  height: 90px;
   align-self: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .hotel-details {
   display: flex;
+  flex-grow: 3;
   flex-direction: column;
-  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 4%;
+  padding: 0px;
 }
+
 
 .hotel-rate {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+  margin-left: 73px;
+}
+
+.hotel-price {
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -388,13 +421,13 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0px;
 }
 
 .type, .price {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
 }
 
 .hotel-buy a {
@@ -402,15 +435,20 @@ a {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  padding: 8px 16px 8px 16px;
+  padding: 4px 17px 4px 17px;
+  margin:0;
 }
 
 .details {
   background-color: #81b3d2;
+  margin: 0px;
+  padding: 0px;
 }
 
 .reserve {
   background-color: #766357;
+    margin: 0px;
+  padding: 0px;
 }
 
 .details:hover {
@@ -436,6 +474,8 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #666666;
+  margin: 0px;
+  padding: 0px;
 }
 
 .rating {
