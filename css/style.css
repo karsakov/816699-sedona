@@ -1,6 +1,4 @@
-* {
-  outline: 2px solid red;
-}
+
 
 body {
   margin: 0;
@@ -370,8 +368,6 @@ a {
 .catalog-second-section {
   display: flex;
   justify-content: flex-end;
-  flex-grow: 1;
-  margin-bottom: 10px;
   padding: 0px;
 }
 
@@ -388,16 +384,14 @@ a {
   height: 90px;
   align-self: center;
   justify-content: center;
-  flex-grow: 1;
+  padding-right: 30px;
 }
 
 .hotel-details {
   display: flex;
-  flex-grow: 3;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 4%;
   padding: 0px;
 }
 
@@ -408,7 +402,6 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   text-align: center;
-  margin-left: 73px;
 }
 
 .hotel-price {
