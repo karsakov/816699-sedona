@@ -177,7 +177,7 @@ a {
 
 .tip {
   position: relative;
-  padding-top: 145px;
+  padding-top: 140px;
   padding-right: 5%;
   padding-left: 5%;
   width: 33%;
@@ -191,8 +191,8 @@ a {
   position: absolute;
   width: 75px;
   height: 72px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  margin-left: -37px;
   bottom: 60%;
   background-repeat: no-repeat;
 }
@@ -203,14 +203,12 @@ a {
 
 .food h3:before {
   background-image: url("../img/icon-3.svg");
-  margin-left: -5%;
 }
 
 .gifts h3:before {
   background-image: url("../img/icon-2.svg");
   width: 76px;
   height: 76px;
-  margin-left: 5%;
 }
 
 
@@ -258,10 +256,12 @@ a {
 .first-column {
   position: relative;
   left: -4%;
+  color: #ffffff;
 }
 
 .second-column {
   margin-left: 24%;
+  color: #ffffff;
 }
 
 .filter-form legend {
@@ -285,9 +285,9 @@ a {
 
 .forms legend {
   display: block;
-  margin-top: 49px;
   margin-bottom: 5px;
   padding-top: 28px;
+  color: white;
 }
 
 .checkbox-filter + label {
@@ -325,9 +325,6 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-
-
-  margin-right: 2%;
 }
 
 .filter {
@@ -1166,6 +1163,7 @@ margin-left: 21px;
 
 .price-controls input {
   width: 50px;
+  height: 30px;
   margin: 0;
 
   color: inherit;
