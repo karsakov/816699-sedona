@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона|Главная</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
-     <link href="css/style.css" rel="stylesheet">
-     <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.min.css" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
   </head>
 
   <body>
@@ -94,7 +93,7 @@
           </div>
 
           <div class="booking-map">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="search-form search-form-active" action="https://echo.htmlacademy.ru" method="post">
               <div class="input-item">
                 <label for="arrive-date">Дата заезда:</label>
                 <input class="input-date" type="text" id="arrive-date" name="arrive-date" placeholder="24 апреля 2017">
@@ -119,17 +118,21 @@
             <div class="amount">
               <div class="adult-amount">
                 <label for="adult">Взрослые:</label>
+                <div class="buttons-and-input buttons-and-input-one">
                 <button class="button-minus button-minus-one" type="button"><span class="visually-hidden">-</span></button>
                 <input class="adult-number" type="text" id="adult" name="adult" placeholder="2">
                 <button class="button-plus button-plus-one" type="button"><span class="visually-hidden">+</span></button>
               </div>
+              </div>
 
               <div class="children-amount">
                 <label for="children">Дети:</label>
+                <div class="buttons-and-input buttons-and-input-two">
                 <button class="button-minus button-minus-two" type="button"><span class="visually-hidden minus">-</span></button>
                 <input class="children-number" type="text" id="children" name="children" placeholder="0">
                 <button class="button-plus button-plus-two" type="button"><span class="visually-hidden">+</span></button>
               </div>
+            </div>
             </div>
               <button class="search-hotel" type="submit">Найти</button>
             </form>
