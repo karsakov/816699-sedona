@@ -1194,8 +1194,8 @@ padding-bottom: 4px;
   color: #000000;
 }
 
-.button-plus: active,
-.button-minus: active {
+.button-plus:active,
+.button-minus:active {
   color: #81b3d2;
 }
 
