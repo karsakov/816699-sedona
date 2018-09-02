@@ -1189,8 +1189,8 @@ padding-bottom: 4px;
   background-color: #81b3d2;
 }
 
-.button-plus: hover,
-.button-minus: hover {
+.button-plus:hover,
+.button-minus:hover {
   color: #000000;
 }
 
