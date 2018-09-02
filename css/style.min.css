@@ -108,7 +108,7 @@ a {
   min-width: 768px;
   width: 100%;
   min-height: 564px;
-  background-color: white;
+  background-color: #81b3d2;
   background-image:
   url("../img/intro-mask.svg"),
   url("../img/intro-welcome.svg"),
@@ -120,7 +120,7 @@ a {
   50% 0;
   background-repeat: no-repeat;
   background-size:
-  110%,
+  100%,
   459px 353px,
   cover;
 }
@@ -1102,6 +1102,7 @@ padding-bottom: 4px;
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 114px;
+  background-color: #f2f2f2;
 }
 
 .buttons-and-input-one {
