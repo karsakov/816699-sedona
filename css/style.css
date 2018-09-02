@@ -393,6 +393,10 @@ a {
   font-weight: 400;
 }
 
+.underline {
+  border-bottom: 1px dotted #81b3d2;
+}
+
 .sorted-item-arrows {
   display: flex;
   flex-grow: 3;
@@ -419,9 +423,6 @@ a {
 
 .sorted-items a {
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
-  text-decoration-color: #81b3d2;
-  text-decoration-style: dotted;
 }
 
 .sorted-items a:hover {
@@ -892,6 +893,17 @@ padding-bottom: 4px;
   border: none;
   fill: #cacaca;
   outline: none;
+  cursor: pointer;
+}
+
+.calendar-button:focus {
+  fill: black;
+}
+
+.button-plus:focus:before,
+.button-plus:focus:after,
+.button-minus:focus:after {
+  background-color: black;
 }
 
 .calendar-button:hover {
@@ -914,6 +926,7 @@ padding-bottom: 4px;
   background-color: transparent;
   color: #a9a9a9;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .buttons-and-input {
@@ -1197,7 +1210,7 @@ padding-bottom: 4px;
   font-size: 14px;
   font-weight: normal;
   line-height: 33px;
-  vertical-align: top;
+  vertical-align: baseline;
 
   cursor: pointer;
 }
