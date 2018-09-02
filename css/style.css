@@ -775,6 +775,7 @@ position: relative;
 
 .search-form {
   transform: translateY(-200%);
+  transition: 1s;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -788,7 +789,6 @@ position: relative;
 
 .search-form-active {
   transform: translateY(0%);
-  transition: 0.5s;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1311,4 +1311,8 @@ padding-bottom: 4px;
   flex-wrap: wrap;
   transform: translateY(-3px);
   padding-right: 40px;
+}
+
+.checkbox-filter:focus + label {
+  outline: 3px solid #81b3d2;
 }
