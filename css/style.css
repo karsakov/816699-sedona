@@ -244,8 +244,18 @@ a {
   color: #ffffff;
 }
 
+.filter-form fieldset {
+  padding: 0px;
+  min-width: 150px;
+}
+
+.filter-list {
+  padding-left: 0px;
+}
+
 .filter-option label {
   cursor: pointer;
+  position: relative;
 }
 
 .first-second-columns {
@@ -268,27 +278,30 @@ a {
 
 .first-column {
   position: relative;
-  left: -4%;
   color: #ffffff;
+  margin-right: 106px;
+  min-width: 150px;
 }
 
 .second-column {
-  margin-left: 24%;
   color: #ffffff;
 }
 
 .filter-form legend {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
+  line-height: 21px;
 }
 
 .filter-form ul {
   list-style: none;
-
+  margin-bottom: 26px;
 }
 
 .filter-form fieldset {
   border: none;
+  margin: 0px;
 }
 
 .first-column,
@@ -298,7 +311,7 @@ a {
 
 .forms legend {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
   padding-top: 28px;
   color: white;
 }
@@ -307,39 +320,46 @@ a {
   display: block;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .checkbox-filter + label:before {
   content: "";
-  position: absolute;
   background-image: url(../img/checkbox-off.svg);
-  width: 23px;
-  height: 23px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 27px;
   background-color: transparent;
   left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
 }
 
 .checkbox-filter:checked + label:before {
   content: "";
-  position: absolute;
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   width: 26px;
   height: 27px;
   background-color: transparent;
   background-position: 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
 }
 
 .checkbox-filter[disabled] + label:before {
   content: "";
-  position: absolute;
   background-image: url(../img/checkbox-off-disabled.svg);
   background-repeat: no-repeat;
   width: 26px;
   height: 27px;
   background-color: transparent;
   background-position: 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
 }
 
 .checkbox-filter:checked[disabled] + label:before {
@@ -351,6 +371,8 @@ a {
   height: 27px;
   background-color: transparent;
   background-position: 0 0;
+  vertical-align: middle;
+  padding-right: 15px;
 }
 
 .found {
@@ -358,13 +380,13 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-  margin-right: 49px;
+  margin-right: 48px;
 }
 
 .filter {
   display: flex;
   text-align: left;
-  padding: 32px 6% 29px 6%;
+  padding: 33px 6% 28px 6%;
 }
 
 
@@ -437,6 +459,7 @@ a {
 .sorted-items .active {
   color: #81b3d2;
   text-decoration: none;
+  margin-right: 33px;
 }
 
 .hotel-title {
@@ -505,6 +528,7 @@ a {
 
 .hotel-price {
   display: inline-block;
+  vertical-align: middle;
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -520,6 +544,7 @@ a {
 
 .type, .price {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 110px;
   font-size: 14px;
   line-height: 21px;
@@ -528,6 +553,7 @@ a {
 
 .price {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   margin-left: 2px;
 
@@ -652,7 +678,7 @@ a {
 }
 
 .feature h3 {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .feature p,
@@ -667,8 +693,12 @@ a {
   margin-right: auto;
 }
 
+.tip p {
+  margin-top: 24px;
+}
+
 .feature p {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .features-list {
@@ -686,8 +716,9 @@ a {
 .feature-with-illustration {
   background-color: #81b3d2;
   color: white;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 3.5%;
+  padding-left: 3.5%;
+  min-width: 26%;
 }
 
 .feature-with-illustration p {
@@ -740,9 +771,10 @@ a {
   border: none;
   cursor: pointer;
   bottom: 0px;
+  padding-top: 32px;
+  padding-bottom: 30px;
 
   width: 568px;
-  height: 86px;
   background-color: #766357;
 }
 
@@ -1062,6 +1094,7 @@ padding-bottom: 4px;
 
 .tag {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 21px;
   line-height: 26px;
   transform: translateX(15%);
@@ -1081,6 +1114,7 @@ padding-bottom: 4px;
 .social-button {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -1165,6 +1199,7 @@ padding-bottom: 4px;
   padding-top: 28px;
   width: 55%;
   max-width: 316px;
+  min-width: 218px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -1289,7 +1324,7 @@ padding-bottom: 4px;
 .btn-transparent {
   display: block;
   margin: 0 20% 0 27%;
-  padding: 6px 29px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 21px;
@@ -1316,14 +1351,22 @@ padding-bottom: 4px;
   flex-wrap: wrap;
 }
 
-
-.sorted-option a,
-.sorted-option .sorted
- {
+.sorted-option .sorted {
   display: flex;
   flex-wrap: wrap;
   transform: translateY(-3px);
-  padding-right: 40px;
+  margin-right: 41px;
+}
+
+.sorted-option a {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(-3px);
+  margin-right: 33px;
+}
+
+.active .underline {
+  border: none;
 }
 
 .checkbox-filter:focus + label {
